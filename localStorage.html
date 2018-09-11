@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>localStorage:主要作用是本地存储</p>
+    <input type="text" id="username"> 
+    <input type="button" value="设置数据" id="localStorageId">
+    <input type="button" value="获取数据" id="getlocalStorageId">
+    <input type="button" value="删除数据" id="removesessionStorageId">
+
+    <script>
+        document.getElementById("localStorageId").onclick=function()
+        {
+            //把用户通过<input>输入的数据保存到localStorage
+            var username=document.getElementById("username").value;
+            window.localStorage.setItem("username",username);
+        };
+        document.getElementById("getlocalStorageId").onclick=function()
+        {
+            //从localStorage 获取数据
+            var username=window.localStorage.getItem("username");
+            alert(username);
+        };
+        document.getElementById("removesessionStorageId").onclick=function(){
+            //删除localStorage中的数据
+            var username=document.getElementById("username").value;
+            window.localStorage.removeItem("username");
+        };
+    </script>
+</body>
+</html>
