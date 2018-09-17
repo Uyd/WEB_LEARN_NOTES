@@ -5,7 +5,7 @@
 
 body {
     background-color: ivory;
-    padding: 0 150px;
+    padding: 0 25%;
 }
 
 span {
@@ -21,21 +21,79 @@ span {
 }
 
 /* 头部的个人图片展示 */
+header ul {
+    border-radius: 2px 0 0 2px;
+    background: teal;
+}
+
 header li {
     text-align: center;
-    line-height: 40px;
     float: left;
+    font-size: 16px;
+    font-family: "幼圆";
+    /* cursor: pointer; */
     list-style: none;
+    position: relative;
+}
+
+li a {
+    display: block;
     width: 80px;
     height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
     background-color: teal;
 }
 
-header li:hover {
+header li:hover a {
     background-color: cadetblue;
 }
 
-.ul_details {
-    background-color: cadetblue;
-    display: none;
+header li:hover .drop-down-details {
+    /* display: block; */
+    /* opacity: 1; */
+    height: 130px;
+}
+
+.drop-down-details {
+    /* display: none; */
+    /* opacity: 0; */
+    height: 0;
+    /* width: 80px; */
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.4s ease;
+}
+
+header li:hover .drop-down-details a {
+    background-color: teal;
+}
+
+.drop-down-details a:hover {
+    /* background-color: cadetblue; */
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* 主要内容 */
+.row {
+    width: 100%;
+    height: 900px;
+    background-color: white;
+}
+.left-column{
+    width:160px;
+    height:100%;
+    margin-top:40px;
+    background-color:#00000017;
+}
+.left-column ul{
+    list-style:none;
+    text-align: center;
+}
+.left-column li{
+    text-decoration: underline;
+    width:100%;
+    height:40px;
 }
