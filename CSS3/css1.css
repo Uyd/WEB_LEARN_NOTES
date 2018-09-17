@@ -1,0 +1,10 @@
+body{text-align: center;}
+p{text-indent:0px;
+    color:green;
+    text-decoration:underline;
+    text-decoration:unset;/*去除样式*/
+}
+
+.big{
+    color:teal;
+}
