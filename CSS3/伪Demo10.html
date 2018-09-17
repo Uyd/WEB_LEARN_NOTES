@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>锚点和点击交互</title>
+    <style>
+    :target{
+        color:forestgreen;
+    }
+    /* 之前插入 设置内容用content属性 */
+    p:before{
+        content:"最新报道";
+        color:darkslategrey;
+        font-family: "黑体";
+        font-weight:bold;
+        font-size:30px;
+    }
+    p:after{
+        content:url(../images/02zy.jpg);
+        width:5px;
+        height:5px;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+    <h2 id="main">小说</h2>
+    <p>
+        <!-- 锚点 -->
+        <a href="#news1">第一章</a>
+        <a href="#news2">第二章</a>
+    </p>
+    <h4>正文</h4>
+    <p><a href="#main">回首页</a></p>
+    <p id="news1">人生只有经历才会懂得,只有懂得才知道珍惜，一生中，总会有一个人让你笑得最甜，也总会有一个人让你痛得最深，忘记,是善待自己。</p>
+    <p id="news2">许多事情还是看淡的好,人生的过程不过就是失与得,看淡了也就轻松了在一切看淡后我不知道我该看重什么,自己看不懂的灵魂总在流泪……</p>
+</body>
+
+</html>

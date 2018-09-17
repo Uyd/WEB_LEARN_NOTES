@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*页面所有的标签 除了p*/
+        body *:not(p) {
+            color: chartreuse;
+        }
+
+        /*选择列数为一个的列表*/
+        li:only-child {
+            color: blue;
+        }
+
+        li:last-child {
+            color: tomato;
+        }
+        li:first-child{
+            color:brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>文章网</h2>
+    <p id="one">无论你在什么时候开始</p>
+    <p id="two">重要的是开始之后就不要停止</p>
+    <p id="onea1">无论你在什么时候结束</p>
+    <p id="two1a">重要的是结束之后就不要悔恨</p>
+
+    动作电影列表
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    卡通电影列表
+    <ul>
+        <li>1</li>
+    </ul>
+    情感电影列表
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>

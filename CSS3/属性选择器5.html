@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性选择器</title>
+    <style type="text/css">
+        p[id^=one] {
+            /*id值为one开头的元素 */
+            color: aqua;
+        }
+
+        p[id$=two] {
+            /*id值为two结尾的元素 */
+            background: navajowhite;
+        }
+
+        p[id*=a] {
+            /* 包含 --不能以数字开头*/
+            color: mediumseagreen;
+            background: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="one">无论你在什么时候开始</p>
+    <p id="two">重要的是开始之后就不要停止</p>
+    <p id="onea1">无论你在什么时候结束</p>
+    <p id="two1a">重要的是结束之后就不要悔恨</p>
+</body>
+
+</html>

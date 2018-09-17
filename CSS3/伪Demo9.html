@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li:nth-child(odd) {
+            color: blue;
+        }
+
+        li:nth-last-child(even) {
+            color: red;
+        }
+
+        /* 标签 基数 */
+        p:nth-of-type(odd) {
+            color: aqua;
+        }
+
+        p {
+            height: 30px;
+        }
+        /*空选择器 */
+        :empty{
+            background: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    动作电影列表
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    卡通电影列表
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    情感电影列表
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>
