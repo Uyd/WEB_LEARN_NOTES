@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: ivory;
+    padding: 0 150px;
+}
+
+span {
+    font-size: 18px;
+    letter-spacing: 20px;
+    /*间距*/
+    line-height: 100px;
+    background: burlywood;
+    text-align: center;
+    text-shadow: 2px 2px aqua;
+    color: black;
+    display: block;
+}
+
+/* 头部的个人图片展示 */
+header li {
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    list-style: none;
+    width: 80px;
+    height: 40px;
+    background-color: teal;
+}
+
+header li:hover {
+    background-color: cadetblue;
+}
+
+.ul_details {
+    background-color: cadetblue;
+    display: none;
+}
