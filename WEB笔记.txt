@@ -14,6 +14,7 @@ p strong{}
 并级选择器 h1,h2,h3{}
 交集选择器 
 
+<<<<<<< HEAD
 9-20
 子代选择器 >
 h1>a  子元素为a的标签
@@ -50,3 +51,6 @@ p:nth-last-of-type(even)
 链接的伪类
 :link/:visited 点过，没点过
 :hover/:active 经过，点击
+=======
+
+>>>>>>> 86663f5e1670311aa53061093e4053ff44c857b8
