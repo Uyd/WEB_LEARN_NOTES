@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .fater{
+            background:cadetblue;
+            overflow: hidden;
+        }
+        .fater div {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            background: yellow;
+            text-align: center;
+            line-height: 50px;
+            
+            margin:20px;
+        }
+
+        .clear {
+            /* 空标签清除浮动 */
+            clear: both;
+        }
+        p{
+            text-indent: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fater">
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+    <p>小时候看《犬夜叉》，总是不明白，这不就是一个笨狗带领几个小伙伴一起打怪兽升级的事情嘛？本来犬夜叉遇见戈薇，刚好就是完美的结局，男女主剧最后在一起，不是很好吗？为何作者要给我们安排一个桔梗呢？这样感觉桔梗好多余。</p>
+    </div>
+    <div class="clear">111</div>
+    <p>小时候看《犬夜叉》，总是不明白，这不就是一个笨狗带领几个小伙伴一起打怪兽升级的事情嘛？本来犬夜叉遇见戈薇，刚好就是完美的结局，男女主剧最后在一起，不是很好吗？为何作者要给我们安排一个桔梗呢？这样感觉桔梗好多余。</p>
+</body>
+
+</html>
