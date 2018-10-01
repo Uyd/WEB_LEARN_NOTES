@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    a{
+        display: block;
+    }
+    a[href$=\/]:after,a[href=html]:after,a[href=htm]::after
+    {
+        content:"web网页";
+        /* color:red; */
+    }
+    a[href$=jpg]:after{
+        content:"jpg图片";
+        /* color:yellow; */
+    }
+    </style>
+</head>
+<body>
+    <a href="../images/02zy.jpg">1</a>
+    <a href="Location.html">2</a>
+    <a href="属性选择器5.html">3</a>
+</body>
+</html>
