@@ -1,7 +1,3 @@
 插件同步key
-教室
-
-
-宿舍
-7a3caf72977630854f6769bf4df93ec6a4f05654
-Hostel128
+room128
+cbb330268c55e976652dbadc3b76db2258aaaf6b
