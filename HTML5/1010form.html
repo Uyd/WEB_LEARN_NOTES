@@ -11,7 +11,7 @@
 <body>
     <form action="#" mothod="post">
         用户：
-        <input type=text name="loginname" value="" /><br />
+        <input type=text name="loginname" placeholder="请输入用户名"  required="required"/><br />
         密码：
         <input type=password size="12"/>
         性别：
@@ -24,6 +24,8 @@
         <input type="email"/>
         颜色
         <input type="color" value="#fdfd12"/>
+        年龄:
+        <input type="number" value="19" min="1" max="100" step="1"/>
         按钮组：
         <input type="submit" value="提交">
         <input type="reset" value="重置">
