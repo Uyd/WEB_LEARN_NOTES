@@ -14,9 +14,11 @@
             margin: 80px auto;
 
             /* overflow: hidden; */
+            /* 透视图的视角 */
+            perspective:40000px;
             position: relative;
             -webkit-transform-style:preserve-3d;
-            transition: all 1.5s;
+            transition: all 1.5s ease 0s;
         }
 
         img {
@@ -45,7 +47,8 @@
             transform: rotateX(90deg)  translateZ(100px);
         }
         div img:nth-child(2){
-            transform: rotateX(0deg)  translateZ(100px);
+            transform:translateZ(100px);
+            z-index:2;
         }
         div:hover {
             transform: rotateX(-90deg);
