@@ -1,0 +1,56 @@
+CSS样式表（样式表的优先级）
+1.行内式
+2.内嵌式
+3.链入式
+
+三种选择器
+1.标签
+2.分类
+3.id
+
+后代选择器 
+strong{}
+p strong{}
+并级选择器 h1,h2,h3{}
+交集选择器 
+
+<<<<<<< HEAD
+9-20
+子代选择器 >
+h1>a  子元素为a的标签
+
+兄弟选择器 + ～
+h1+h2 与h1相邻单个h2的标签
+h2～h1 与h2相邻的所有h1元素
+
+伪类选择器
+
+标签的伪类 :root
+body *:root(p) 匹配文档树的根元素
+
+:only-child 
+li:only-child 只有一个子元素的列表
+li:last-child 选择最后一个
+li:first-child 选择第一个
+
+li:nth-child(odd) 基数 (开始/最后算第几个)
+li:nth-last-child(even)偶数
+
+p:nth-of-type(odd) 标签设置属性
+p:nth-last-of-type(even)
+
+:empty 空选择器
+
+锚点： 单个页面中跳转 href链接地址中加#id
+
+:target 在跳转到设定的锚点--指定样式
+
+:before/:after 设置内容用content属性
+在之前或在之后插入内容
+
+链接的伪类
+:link/:visited 点过，没点过
+:hover/:active 经过，点击
+=======
+
+>>>>>>> 86663f5e1670311aa53061093e4053ff44c857b8
