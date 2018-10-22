@@ -1,0 +1,12 @@
+CaCHE MANIFEST
+cache:
+#需要缓存的文件
+03yundong.jpg
+
+network:
+#绕过缓存直接读取的文件
+101cqh.jpg
+
+fallback:
+#当访问缓存失败后，备用访问的资源
+101cqh.jpg
