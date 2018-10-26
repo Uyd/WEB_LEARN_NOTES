@@ -1,0 +1,14 @@
+window.prompt(提示信息字符串，默认输入值);  --用户输入信息的对话框
+
+window.alert(""); --对用户提示警告对话框
+
+console.log(""); --在调试控制台输出
+
+function 函数名 ([参数1,参数2,……])｛  --声明函数
+	    函数体
+
+for(变量 in 对象){         --处理数组
+//此处为JavaScript代码
+}
+
+array[].length --toString 长度，将数组输出成字符串，好隔开
