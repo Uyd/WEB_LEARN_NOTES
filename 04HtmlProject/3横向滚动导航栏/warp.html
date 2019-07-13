@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>warp</title>
+    <style>
+        #warp {
+        }
+
+        #warp .box {
+            margin:50px auto;
+            width: 300px;
+            background: lightblue;
+            overflow: hidden;
+            overflow-x: scroll;
+        }
+
+        #warp .box ul {
+            line-height:30px;
+            width: 1000%;
+            margin:0;
+            padding:0;
+        }
+
+        #warp .box ul li {
+            list-style: none;
+            float: left;
+            margin-right:3px;
+        }
+
+        #warp .box ul a {
+            display: inline-block;
+            padding: 0 10px;
+            padding:5px;
+            color:white;
+            text-decoration: none;
+        }
+        #warp .box ul a:hover {
+            background: lightcoral;
+        }
+        #warp .box ul a:focus {
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="warp">
+        <div class="box">
+            <ul>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <li><a href="javascript:void(0);">设计架</a></li>
+                <div style="clear: both"></div>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 动态计算ul宽度 -->
+<script>
+var liwt=document.querySelectorAll(".box ul li");
+var ulwt=document.querySelector(".box ul");
+var len=0;
+for(var i=0;i<liwt.length;i++){
+    len+=liwt[i].clientWidth;
+}
+//+margin 3*liwt.length
+ulwt.style.width=len+3*liwt.length+"px";
+</script>
